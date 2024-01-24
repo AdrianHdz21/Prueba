@@ -1,7 +1,7 @@
 // Función para codificar una cadena de texto
 function codificarCadena() {
   // Obtener el valor del input de la cadena original
-  let cadenaOriginal = document.getElementById("cadena").value.toLowerCase();
+  let cadenaOriginal = document.getElementById("cadena").value;
 
 
   // Validar la cadena original antes de continuar
@@ -47,7 +47,7 @@ function codificarCadena() {
 // Función para decodificar una cadena de texto
 function decodificarCadena() {
   // Obtener el valor del input de la cadena codificada
-  let cadenaCodificada = document.getElementById("cadena").value.toLowerCase();
+  let cadenaCodificada = document.getElementById("cadena").value;
 
   // Validar la cadena codificada antes de continuar
   if (!validarCadena(cadenaCodificada)) {
