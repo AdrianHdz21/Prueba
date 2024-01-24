@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
 }
 
-@media screen and (max-width:940px) {
+@media screen and (max-width:768px) {
     body #codificacion{
       font-size: 14px;  
       margin: 3% 0 3% 20%
