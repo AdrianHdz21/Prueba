@@ -1,29 +1,28 @@
 html {
     background-color: var(--Light-blue-light-blue-100, #0f324c);
-    ;
 }
 
 body {
     min-height: 100dvh;
+    min-width: 100dvh;
     background: var(--Light-blue-light-blue-100, #0f324c);
     margin: 0 auto;
 }
 
-body > * {
-    width: 100%;
-}
+@media screen and (max-width:940px) {
+    body #codificacion{
+      font-size: 14px;  
+      margin: 3% 0 3% 20%
+    }
 
-@media screen and (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas */
-    body {
-      font-size: 14px;
+    body #areaResultado {
+        margin-left: 20%;
+    }
+
+    .titulo{
+        font-size: 18px;
     }
 }
-
-.max-width {
-    width: 90%;
-    max-width: 1500px;
-  }
 
 #tema {
     background: var(--Light-blue-light-blue-100, #0f324c);
@@ -76,10 +75,14 @@ body > * {
     line-height: 250px;
 }
 
+#areaResultado::placeholder,
+#cadena::placeholder{
+    font-size: 0.8em;
+}
 
 [type="submit"] {
     width: 20%;
-    font-size: 15px;
+    font-size: .6em;
     font-weight: bold;
     font-style: oblique;
     border-radius: 25px;
@@ -116,7 +119,7 @@ body > * {
     border-style: solid;
     border-color: #000000;
     margin: .5% 1% .5% 3%;
-    width: 23em;
+    width: 25em;
     height: 30.5em;
     text-align: center;
     resize: none;
@@ -162,9 +165,3 @@ header {
     height: 70px;
   }
   
-  header > .max-width {
-    background-color: var(--bg-grey);
-    height: 100%;
-    border-bottom-right-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
-  }
