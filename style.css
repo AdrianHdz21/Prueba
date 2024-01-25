@@ -163,7 +163,7 @@ header {
 
     #cadena{
         padding: 20px;
-        width: 85%;
+        max-width: 85%;
         margin-bottom: 4%;
     }
 }
