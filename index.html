@@ -1,82 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Challenge Codificacion</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Codificación</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
 
-  <body>
-    <div id="tema">
-      <h1 class="titulo">
-        "CodeCrypt Challenge: Tu Aventura de Encriptación y Desencriptación"
-      </h1>
-    </div>
-    <div id="codificacion">
-      <textarea
-        rows="4"
-        cols="30"
-        type="text"
-        id="cadena"
-        placeholder="Ingresa la cadena  a codificar o decodificar"
-      ></textarea
-      ><br />
-      <input
-        type="submit"
-        class="botonCod"
-        value="Codificar"
-        onclick="codificarCadena();"
-      />
-      <input
-        type="submit"
-        class="botonDec"
-        value="Decodificar"
-        onclick="decodificarCadena();"
-      />
-      <input
-        type="submit"
-        class="botonLimp"
-        value="Limpiar"
-        onclick="limpiar();"
-      />
-      <input
-        type="submit"
-        class="botonCop"
-        value="Copiar Texto"
-        onclick="copiarTexto();"
-      />
-    </div>
-    <textarea
-      id="areaResultado"
-      cols="30"
-      rows="10"
-      readonly="true"
-      placeholder="Aqui se muestra el resultado"
-    ></textarea>
+<body>
+    <header>
+        <div id="tema">
+            <h1 class="titulo">"CodeCrypt Challenge: Tu Aventura de Encriptación y Desencriptación"</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="codificacion">
+            <textarea
+                id="cadena"
+                rows="4"
+                cols="20"
+                placeholder="Ingresa la cadena a codificar o decodificar"
+            ></textarea><br />
+
+            <input
+                type="submit"
+                class="botonCod"
+                value="Codificar"
+                onclick="codificarCadena();"
+            />
+
+            <input
+                type="submit"
+                class="botonDec"
+                value="Decodificar"
+                onclick="decodificarCadena();"
+            />
+
+            <input
+                type="submit"
+                class="botonLimp"
+                value="Limpiar"
+                onclick="limpiar();"
+            />
+
+            <input
+                type="submit"
+                class="botonCop"
+                value="Copiar Texto"
+                onclick="copiarTexto();"
+            />
+        </div>
+
+        <textarea
+            id="areaResultado"
+            cols="20"
+            rows="3"
+            readonly="true"
+            placeholder="Aquí se muestra el resultado"
+        ></textarea>
+    </main>
+
     <footer>
-      <legend>
-        &copy Hernandez Mendez Adrian Alonso | Actualizado por última vez: Enero
-        2024
-      </legend>
-      <nav>
-        <legend>
-          <i
-            class="bx bxl-github"
-            style="--color-icon: #171515; --font: 1.5rem"
-          ></i>
-          <a href="https://github.com/AdrianHdz21" target="_blank">
-            AdrianHdz21</a
-          >
-          | Group 6 - Alura Latam 2024
-          </legend>
-      </nav>
+        <p>&copy; Hernández Méndez Adrián Alonso | Actualizado por última vez: Enero 2024</p>
+
+        <nav>
+            <i class="bx bxl-github" style="--color-icon: #171515; --font: 1.5rem"></i>
+            <a href="https://github.com/AdrianHdz21" target="_blank">AdrianHdz21</a> | Group 6 - Alura Latam 2024
+        </nav>
     </footer>
+
     <script src="codificacion.js"></script>
-  </body>
+</body>
 </html>
