@@ -8,32 +8,6 @@ body {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    body #codificacion {
-        font-size: 14px;
-        margin-left: 20%;
-        width: 55%;
-    }
-
-    body #areaResultado {
-        margin-left: 20%;
-        width: 55%;
-        margin-top: 1%;
-    }
-
-    .titulo {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 767px) {
-    #codificacion,
-    #areaResultado {
-        width: 90%;
-        margin-left: 5%;
-    }
-}
-
 #tema {
     background: var(--Light-blue-light-blue-100, #0f324c);
     margin: 2% 4% 4% 4%;
@@ -52,7 +26,7 @@ body {
 #codificacion {
     background: var(--Light-blue-light-blue-100, #234a6b);
     border: 1px solid #000000;
-    margin: -3% 2% 0 2%;
+    margin: -3% 2% 0 3.5%;
     border-radius: 30px;
     width: 92%; 
     height: 18em;
@@ -70,12 +44,13 @@ body {
     border: 1px solid #ddd;
     padding: 5px;
     resize: none;
+    margin-bottom: 3%;
 }
 
 #cadena::placeholder {
     color: white;
     text-align: center;
-    line-height: 130px;
+    line-height: 150px;
 }
 
 #areaResultado::placeholder,
@@ -123,16 +98,17 @@ body {
     font-size: 11px;
     margin: 1%;
     width: 92%; 
-    height: 17em;
+    height: 15em;
     text-align: center;
     resize: none;
     border-radius: 30px;
+    margin-left: 3%;
 }
 
 #areaResultado::placeholder {
     text-align: center;
     color: gray;
-    line-height: 180px;
+    line-height: 160px;
 }
 
 footer {
@@ -167,24 +143,28 @@ header {
     height: 70px;
 }
 
-@media (min-width: 768px) {
-    body #codificacion  #areaResultado{
-        font-size: 13px;
-        margin-left: 5%;
-        width: 55%;
-        display: block; 
-    }
-
-    .titulo {
-        font-size: 18px;
-    }
-}
 
 @media (max-width: 767px) {
-    #codificacion,
-    #areaResultado {
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 1.5%;
+    #codificacion {
+        width: 92%;
+        margin-left: 3%;
+        margin-bottom: 2%;
     }
+
+    #cadena::placeholder{
+        line-height: 150px;
+    }
+
+    #areaResultado{
+        padding: 20px;
+        width: 86%;
+        margin-left: 3%;
+    }
+
+    #cadena{
+        padding: 20px;
+        width: 85%;
+        margin-bottom: 4%;
+    }
+
 }
