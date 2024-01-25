@@ -157,13 +157,14 @@ header {
 
     #areaResultado{
         padding: 20px;
-        max-width: 86%;
+        width: 86%;
         margin-left: 3%;
     }
 
     #cadena{
         padding: 20px;
-        max-width: 85%;
+        width: 85%;
         margin-bottom: 4%;
     }
 }
+
