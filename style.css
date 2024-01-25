@@ -146,25 +146,25 @@ header {
 @media (max-width: 767px) {
 
     #tema {
-        margin-top: 8%;
+        margin-top: 5%;
     }
 
     #codificacion {
         width: 91.5%;
-        margin: 4% 2% 5% 2.5%;
+        margin: 3% 1.5% 5% 4%;
     }
 
 
     #cadena::placeholder {
-        line-height: 160px;
+        line-height: 150px;
         font-size: 15px;
         font-weight: bold;
     }
 
     #areaResultado {
         padding: 20px;
-        width: 85%;
-        margin: 0 4% 10% 3%;
+        width: 84%;
+        margin: 0 4% 10% 5%;
         height: 18em;
     }
 
@@ -214,6 +214,6 @@ header {
     #cadena {
         padding: 20px;
         max-width: 78%;
-        margin: 5% 4.5% 5% 5%;
+        margin: 5% 4% 5% 5.5%;
     }
 }
