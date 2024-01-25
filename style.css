@@ -166,3 +166,24 @@ p {
 header {
     height: 70px;
 }
+
+@media (min-width: 768px) {
+    body #codificacion  #areaResultado{
+        font-size: 13px;
+        margin-left: 5%;
+        width: 55%;
+        display: block; 
+    }
+
+    .titulo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    #codificacion,
+    #areaResultado {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
